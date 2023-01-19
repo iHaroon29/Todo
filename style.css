@@ -1,0 +1,197 @@
+:root {
+  --primary-black: #282828;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: var(--primary-black);
+  height: 100vh;
+  display: flex;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
+button {
+  font: inherit;
+  background: none;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  padding: 10px;
+  text-align: center;
+  border-radius: 2px;
+  width: 50%;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.primary-btn {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.select-options-holder {
+  display: none;
+  position: absolute;
+}
+
+.main-holder {
+  width: 50%;
+  box-shadow: 0px 0px 5px 1px grey;
+  padding: 15px;
+  align-self: center;
+  margin: auto;
+  border-radius: 5px;
+}
+
+#todoForm {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#todoPriority {
+  width: 10%;
+  border: none;
+  background: none;
+  border-bottom: 1px solid grey;
+}
+
+#formSubmitBtn {
+  width: 30%;
+}
+
+.task-holder {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  /* margin: 10px 0px; */
+  border-radius: 5px;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.tasks-holder,
+.tasks-holder-f {
+  /* padding: 10px; */
+  z-index: 0;
+  transition: 1s all ease;
+  max-height: 152px;
+  overflow-y: scroll;
+  border-radius: 5px;
+}
+
+.todo-delete-btn {
+  background-color: #e76f51;
+  color: white;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.section-divider {
+  height: 1px;
+  width: 100%;
+  box-shadow: 0px 0px 5px 1px grey;
+  margin: 10px 0px;
+}
+
+.heading-holder {
+  padding: 10px;
+  border-bottom: 1px solid grey;
+  margin-bottom: 10px;
+}
+
+.animate-div {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  z-index: -99;
+  background: green;
+  left: 0;
+  transition: 0.25s all ease-in-out;
+}
+
+.animate-bottom-up {
+  transform: translateY(-40px);
+}
+
+.animate-up-bottom {
+  transform: translateY(10px);
+}
+
+.input-holder-text {
+  background: darkslategray;
+  color: white;
+  padding: 10px 10px;
+  margin: 10px 0px;
+  border-radius: 3px;
+}
+
+.todo-text-holder {
+  z-index: 1;
+  position: relative;
+  border-radius: 3px;
+  box-shadow: 0px 0px 3px 0.5px grey;
+  width: 100%;
+  padding: 10px;
+  align-self: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+.todo-text-holder:hover {
+  color: white;
+}
+
+.todo-btn-holder {
+  z-index: 1;
+  margin-left: 10px;
+}
+
+/* style.css | http://127.0.0.1:5500/style.css */
+
+.task-holder {
+  padding: 5px;
+  margin: 0px 0px;
+}
+
+.option-holder {
+  display: flex;
+}
+
+.icon-holder {
+  width: 25px;
+  background-color: white;
+  box-shadow: 0px 0px 5px 1px grey;
+}
+
+.priority-type {
+  font-weight: bolder;
+}
+
+.priority-holder {
+  display: flex;
+  width: 45%;
+  justify-content: space-between;
+}
+
+.priority-heading {
+  align-self: center;
+}

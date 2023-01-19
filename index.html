@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-holder">
+      <div class="input-holder">
+        <div class="input-holder-text">
+          <h2>Add items to list</h2>
+        </div>
+        <form id="todoForm">
+          <input
+            type="text"
+            placeholder="What's on your mind?"
+            id="todoInput"
+          />
+          <select name="todo-priority" id="todoPriority">
+            <option value="Low" data-priority="2" selected="selected">
+              Low
+            </option>
+            <option value="High" data-priority="1">High</option>
+          </select>
+          <button class="form-submit-btn primary-btn" id="formSubmitBtn">
+            Add Item
+          </button>
+        </form>
+      </div>
+      <div class="heading-holder">
+        <h3>Tasks to work on</h3>
+      </div>
+      <div class="tasks-holder"></div>
+      <div class="section-divider"></div>
+      <div class="heading-holder">
+        <h3>Finished Tasks</h3>
+      </div>
+      <div class="tasks-holder-f"></div>
+      <div class="section-divider"></div>
+      <div class="option-holder">
+        <div class="priority-holder">
+          <button
+            class="sort-btn primary-btn"
+            id="sortBtn"
+            data-sort-type="high"
+          >
+            Sort by Priority
+          </button>
+          <div class="priority-heading">
+            <p>Sorted by <span class="priority-type">Low</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./render.js" type="module"></script>
+</html>
